@@ -108,4 +108,16 @@ class Record
 			return null; // TODO: throw error
 		}
 	}
+
+	/**
+	 * @return array
+	 */
+	public function toArray(): array
+	{
+		return [
+			'id' => $this->getId(),
+			'fields' => (array) $this->getFields(),
+			'created_time' => $this->getCreatedTime(),
+		];
+	}
 }
