@@ -100,6 +100,19 @@ class Request
 	}
 
 	/**
+	 * Get a single record from table.
+	 * 
+	 * @param $id
+	 * 
+	 * @return Response 
+	 */
+	public function getRecord($id)
+	{
+		$response = $this->client->request('GET', $this-getRequestUrl() . '/' . $id);
+		return new Response($response, $this);
+	}
+
+	/**
 	 * Get records from table
 	 *
 	 * @param array $parameters
