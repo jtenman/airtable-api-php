@@ -108,7 +108,7 @@ class Request
 	 */
 	public function getRecord($id)
 	{
-		$response = $this->client->request('GET', $this-getRequestUrl() . '/' . $id);
+		$response = $this->client->request('GET', $this->getRequestUrl() . '/' . $id);
 		return new Response($response, $this);
 	}
 
