@@ -1,5 +1,5 @@
 {
-    "name": "davidzadrazil/airtable-api-php",
+    "name": "digiti/airtable-api-php",
     "description": "PHP wrapper for Airtable API",
     "license": "MIT",
     "minimum-stability": "stable",
@@ -12,6 +12,10 @@
         {
             "name": "David Zadražil",
             "email": "me@davidzadrazil.cz"
+        },
+        {
+            "name": "Jasper Lammens",
+            "email": "jasper@digiti.be"
         }
     ],
     "autoload": {
